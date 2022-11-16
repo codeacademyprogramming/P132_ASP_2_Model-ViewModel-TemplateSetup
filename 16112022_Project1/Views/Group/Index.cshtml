@@ -1,0 +1,14 @@
+﻿@using _16112022_Project1.Models
+@model List<Group>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<ul>
+    @foreach (var item in Model)
+   {
+       <li>@item.Id - @item.No</li>
+   }
+</ul>
+

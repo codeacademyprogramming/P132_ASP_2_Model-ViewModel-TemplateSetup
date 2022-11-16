@@ -1,0 +1,28 @@
+﻿@using _16112022_Project1.Models
+@model Student
+
+@{
+    ViewData["Title"] = "Detail";
+    //Student std = (Student)ViewBag.Student;
+}
+
+
+<h1>Detail</h1>
+<h3>Student Id: @Model.Id</h3>
+<h3>Student Name: @Model.Fullname</h3>
+@*@if (std.Point < 65)
+{
+    <h3>Student Point: @std.Point - Kesildiniz</h3>
+
+}
+else
+{
+    <h3>Student Point: @std.Point - Kecdiniz</h3>
+
+}*@
+
+    <h3>Student Point: @Model.Point - @(Model.Point<65?"Kesildiniz":"Kecdiniz")</h3>
+
+
+
+

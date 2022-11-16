@@ -1,0 +1,29 @@
+﻿@using _16112022_Project1.Models
+@using _16112022_Project1.ViewModels
+
+
+@model StudentViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<h3>Students</h3>
+<ul>
+    @foreach (var item in Model.Students)
+    {
+        <li style="color:@(item.Point<65?"red":"green")">@item.Id - @item.Fullname - @item.Point</li>
+   }
+</ul>
+
+<hr />
+
+<h3>Groups</h3>
+<ul>
+    @foreach(var item in Model.Groups)
+    {
+        <li>@item.Id - @item.No</li>
+    }
+</ul>
